@@ -1,12 +1,73 @@
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+html,
+body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+    font-size: 10px;
 }
 
 .app {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1000px;
+}
+
+.app .main-container {
+    width: 85%;
+    background-color: rgb(139, 139, 9);
+    border-radius: 10px;
+    margin: 6rem 3rem;
+    overflow: hidden;
+}
+
+.app .main-container .card {
+    padding: 40px;
+    background-color: red;
+}
+
+.app .main-container .card .card__icon {
+    height: 35px;
+    margin-bottom: 35px;
+}
+
+.app .main-container .card .card__title {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.app .main-container .card .card__description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.4rem;
+    color: #ffffffd5;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
+.app .main-container .card .card__button button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: hsl(31, 77%, 52%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.app .main-container .card.card--bright-orange {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.app .main-container .card.card--dark-cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.app .main-container .card.card--very-dark-cyan {
+    background-color: hsl(179, 100%, 13%);
 }
